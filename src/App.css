@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.react-icons {
+  size: 10em;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
