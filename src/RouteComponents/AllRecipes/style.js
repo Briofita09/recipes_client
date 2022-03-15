@@ -1,14 +1,12 @@
 import styled from "styled-components";
 import background from "../../images/background_food.jpg";
 
-export const ContentBox = styled.div`
+export const RecipesContent = styled.div`
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  @media (max-width: 800px) {
-    flex-direction: column;
-  }
+
+  margin: 0 auto;
 `;
 
 export const Main = styled.div`

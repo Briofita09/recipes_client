@@ -1,40 +1,30 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
+  position: relative;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 800px) {
+    margin-bottom: 1.5rem;
+    align-items: center;
+    margin: 0;
+  }
 `;
 
 export const Title = styled.h1`
+  position: absolute;
+  right: 10%;
+  top: 40%;
+  color: #fff;
+  font-family: "Pinyon Script", cursive;
+  font-weight: 200;
   text-align: center;
-  font-size: 30px;
+  font-size: 5.5vw;
   line-height: 10px;
   margin-left: 20px;
 `;
 
-export const LoginContainer = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
-export const Input = styled.input`
-  margin:15px;
-  height: 40px;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
-  &:focus {
-    outline: none;
-`;
-
-export const Button = styled.button`
-  border: 1px solid black;
-  border-radius: 10px;
-  background-color: lightRed;
-  color: #000;
-  margin: 5px 15px 0 0;
-  width: auto;
-  height: 60px;
-  font-size: 30px;
+export const Banner = styled.img`
+  width: 100%;
+  height: 25vw;
 `;
