@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { LoginContainer, Input, Button } from "./style.js";
+import { LoginContainer, Input, Button, Form, LoginTitle } from "./style.js";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -17,7 +17,8 @@ export default function Login() {
   }
   return (
     <LoginContainer>
-      <form onSubmit={handleSubmit}>
+      <LoginTitle>Cozinha do Canuto</LoginTitle>
+      <Form onSubmit={handleSubmit}>
         <Input
           type="text"
           placeholder="Email"
@@ -31,8 +32,8 @@ export default function Login() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <Button>Entra aí chef!</Button>
-      </form>
+        <Button>Login</Button>
+      </Form>
     </LoginContainer>
   );
 }

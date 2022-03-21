@@ -1,39 +1,67 @@
 import styled from "styled-components";
 
 export const LoginContainer = styled.div`
-  display: flex;
-  justify-content: center;
+  background-color: lightgreen;
+  width: 100vw;
+  height: 100vh;
+`;
+
+export const LoginTitle = styled.h1`
+  position: fixed;
+  top: 10vh;
+  left: 40vw;
+  font-family: "Pinyon Script", cursive;
+  font-weight: 200;
+  font-size: 60px;
+  @media (max-width: 800px) {
+    font-size: 35px;
+    top: 12vh;
+    left: 18vw;
+  }
 `;
 
 export const Input = styled.input`
-  margin: 15px;
-  height: 10px;
+  background-color: transparent;
+  border: 2px solid green;
+  border-radius: 10px;
+  display: block;
+  width: 400px;
+  margin-bottom: 30px;
   outline: none;
-  border: none;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
-  &:focus {
+  height: 30px;
+  &&focus {
     outline: none;
+  }
+  ::placeholder {
+    font-weight: 700;
+    font-style: italic;
   }
   @media (max-width: 800px) {
     margin-left: 0;
-    width: 50px;
+    width: 250px;
   }
 `;
 
 export const Button = styled.button`
   border: 1px solid black;
   border-radius: 10px;
-  background-color: lightRed;
-  color: #000;
-  margin: 5px 15px 0 0;
-  width: auto;
-  height: 30px;
+  background-color: #4e97d1;
+  color: #fff;
+  margin: 0 auto;
+  width: 400px;
+  height: 40px;
   font-size: 1.3rem;
   @media (max-width: 800px) {
-    height: 20px;
-    align-items: center;
-    margin-top: 10px;
-    font-size: 0.5rem;
+    margin: 0 auto;
+    width: 250px;
+  }
+`;
+
+export const Form = styled.div`
+  position: fixed;
+  top: 30vh;
+  left: 40vw;
+  @media (max-width: 800px) {
+    left: 15vw;
   }
 `;
