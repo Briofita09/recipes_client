@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./RouteComponents/Home";
 import Login from "./RouteComponents/Login";
 import AllRecipes from "./RouteComponents/AllRecipes";
-import Loading from "./Components/Loading/index.jsx";
+import AdminRecipes from "./RouteComponents/AdminRecipes";
 
 function App() {
   return (
@@ -10,8 +10,9 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/admin" element={<Login />} />
           <Route path="/all-recipes" element={<AllRecipes />} />
+          <Route path="/admin" element={<Login />} />
+          <Route path="/admin-recipes" element={<AdminRecipes />} />
         </Routes>
       </Router>
     </div>

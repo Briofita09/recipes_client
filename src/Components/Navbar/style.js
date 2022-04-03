@@ -20,3 +20,7 @@ export const NavbarContainer = styled.div`
   margin-bottom: 30px;
   margin-top: -4px;
 `;
+
+export const Link = styled.div`
+  text-decoration: none;
+`;
