@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import background from "../../images/background_food.jpg";
 
 export const ContentBox = styled.div`
   display: flex;
@@ -12,7 +11,13 @@ export const ContentBox = styled.div`
 `;
 
 export const Main = styled.div`
-  background: url(${background});
-  background-repeat: no-repeat;
-  background-size: cover;
 `;
+
+export const NavigationContainer = styled.div`
+  margin: 2% 0 2% 2%;
+  padding-top: 2px;
+`
+
+export const NavigationMenu = styled.div`
+  background-color: #000;
+`

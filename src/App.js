@@ -3,6 +3,7 @@ import Home from "./RouteComponents/Home";
 import Login from "./RouteComponents/Login";
 import AllRecipes from "./RouteComponents/AllRecipes";
 import AdminRecipes from "./RouteComponents/AdminRecipes";
+import CreateRecipe from "./RouteComponents/CreateRecipe";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/all-recipes" element={<AllRecipes />} />
           <Route path="/admin" element={<Login />} />
           <Route path="/admin-recipes" element={<AdminRecipes />} />
+          <Route path="/admin/create-recipe" element={<CreateRecipe />} />
         </Routes>
       </Router>
     </div>

@@ -43,6 +43,7 @@ const TextTitle = styled.h1`
   font-size: 20px;
   line-height: 25px;
   text-align: center;
+  padding-left: 10px;
 `;
 
 const TextDescription = styled.h2`
@@ -53,6 +54,18 @@ const TextDescription = styled.h2`
   padding: 0 3px;
 `;
 
+const TitleContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const TextTime = styled.h2`
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  padding-right: 10px;
+`;
+
 export {
   Container,
   ImageContainer,
@@ -60,4 +73,6 @@ export {
   TextContainer,
   TextTitle,
   TextDescription,
+  TitleContainer,
+  TextTime,
 };

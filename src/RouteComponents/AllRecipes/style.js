@@ -5,7 +5,6 @@ export const RecipesContent = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-
   margin: 0 auto;
 `;
 

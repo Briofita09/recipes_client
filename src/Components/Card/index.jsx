@@ -7,6 +7,8 @@ import {
   TextContainer,
   TextTitle,
   TextDescription,
+  TitleContainer,
+  TextTime,
 } from "./style.js";
 
 export default function Card(props) {
@@ -16,7 +18,10 @@ export default function Card(props) {
         <Image src={props.image} alt="imagem" />
       </ImageContainer>
       <TextContainer>
-        <TextTitle>{props.title}</TextTitle>
+        <TitleContainer>
+          <TextTitle>{props.title}</TextTitle>
+          <TextTime>{props.time} min</TextTime>
+        </TitleContainer>
         <TextDescription>{props.description}</TextDescription>
       </TextContainer>
     </Container>

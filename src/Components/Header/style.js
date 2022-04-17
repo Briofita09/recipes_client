@@ -5,9 +5,7 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   @media (max-width: 800px) {
-    margin-bottom: 1.5rem;
-    align-items: center;
-    margin: 0;
+    display: none;
   }
 `;
 
